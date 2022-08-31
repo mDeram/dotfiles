@@ -1,0 +1,32 @@
+–––––/Custom\–––––
+<l>p    (v): Replace selection with current buffer content
+<l>u    (n): Show the undotree
+<C-back>(i): Ctrl backspace to delete the previous word
+
+
+
+–––––/Telescope\–––––
+<l>pp   (n): Search from home directory
+<l>pf   (n): Search in all files in the current git project
+<l>pw   (n): Search in all files from the current dir
+
+<l>pe   (n): Ripgrep in the current dir
+
+<l>pi   (n): Search buffer
+
+<l>po   (n): Search nvim help
+
+
+
+–––––/Lsp\–––––
+<l>ed   (n): Go to definition
+<l>ef   (n): List references
+<l>en   (n): Rename (including: definition & references)
+
+" nnoremap <leader>ei :lua vim.lsp.buf.implementation()<CR>
+" nnoremap <leader>eh :lua vim.lsp.buf.hover()<CR>
+" nnoremap <leader>es :lua vim.lsp.buf.signature_help()<CR>
+
+<l>ec   (n): List code actions to solve issues
+
+<CR>    (i): Comfirm autocompletion
